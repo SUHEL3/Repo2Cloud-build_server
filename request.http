@@ -4,3 +4,11 @@ GET https://examples.http-client.intellij.net/get
 
 ###
 GET http://localhost:8081/build-server/test/test
+
+###
+POST http://localhost:8081/build-server/deployment/deploy
+Content-Type: application/json
+
+{
+  "url":"https://github.com/SUHEL3/self-hosted-linux-server"
+}
