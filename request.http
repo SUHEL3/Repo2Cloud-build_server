@@ -6,9 +6,17 @@ GET https://examples.http-client.intellij.net/get
 GET http://localhost:8081/build-server/test/test
 
 ###
-POST http://localhost:8081/build-server/deployment/deploy
+POST http://localhost:8081/build-server/deployment/clone
 Content-Type: application/json
 
 {
-  "url":"https://github.com/SUHEL3/self-hosted-linux-server"
+  "url":"https://github.com/SUHEL3/testing-repo"
+}
+
+###
+POST http://localhost:8081/build-server/deployment/build
+Content-Type: application/json
+
+{
+  "folderPath": "repos/project1787480803367"
 }
