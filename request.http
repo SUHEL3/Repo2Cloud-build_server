@@ -20,3 +20,20 @@ Content-Type: application/json
 {
   "folderPath": "repos/project1787480803367"
 }
+
+###
+POST http://localhost:8081/bot
+Content-Type: application/json
+
+{
+  "msg": "which model are you? by what name are you know as , and can you specify your exact version which is running now"
+}
+
+###
+POST http://localhost:8081/bot/role
+Content-Type: application/json
+
+{
+  "role": "Platform engineer",
+  "msg": "Who are you?"
+}

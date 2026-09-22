@@ -75,5 +75,10 @@ public class DeployService {
         return new BuildResponse(Status.STARTING,imageName);
     }
 
+//    public String runContainer(String imageName) throws Exception{
+//
+//        ProcessBuilder
+//    }
 
+    //write method to start stopped container useful for staring
 }
